@@ -35,7 +35,6 @@ public class BoardRestController {
     @PutMapping("/{boardId}")
     @PreAuthorize("isAuthenticated() && hasPermission(#boardId, 'Long.class')")
     public void addUser(@RequestBody UserEmailDto userEmailDto, @PathVariable Long boardId) {
-        System.out.println(userEmailDto.email);
         boardService.addUser(userEmailDto.email, boardId);
     }
 }

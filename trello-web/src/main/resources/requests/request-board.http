@@ -1,6 +1,6 @@
 ###
 
-POST http://localhost:8080/rest/board
+POST http://localhost:8080/api/board
 Content-Type: application/json
 X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTg5OTMyNTksImV4cCI6MTYxOTA3OTY1OX0.Xra1-Ric0Qo4AKLGT8VGUk9Up4w-wIn2_yfN2H5wAbF7wA1KhIIdxrmhX922edZWRwQ-5O4oGNbTetN6Cf3VwA
 
@@ -10,14 +10,14 @@ X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQi
 
 ###
 
-GET http://localhost:8080/rest/board
-X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTk0MzcxMzIsImV4cCI6MTYxOTUyMzUzMn0.MlCNl5mDCwqpGyh1FuHEWVBO2_4_aOd21m3JKZVEzpPASjuFmyS-aN0oaL-EhSsiPOK5cDNoJ191p7VkX-k-sQ
+GET http://localhost:8080/api/board
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MjA3NTgxOTAsImV4cCI6MTYyMDg0NDU5MH0.pEc8bESJxiuwE4zkps2MZm9MGI1hamjPL1-dSEAZVEQUc-d4efgozd8xEgfH5V3evhr15CocRHBSnHiGpr2aBQ
 
 ###
 
-PUT http://localhost:8080/rest/board/1
+PUT http://localhost:8080/api/board/10
 Content-Type: application/json
-X-TOKEN:Bearer
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MjA3NTgxOTAsImV4cCI6MTYyMDg0NDU5MH0.pEc8bESJxiuwE4zkps2MZm9MGI1hamjPL1-dSEAZVEQUc-d4efgozd8xEgfH5V3evhr15CocRHBSnHiGpr2aBQ
 
 {
   "email": "piauaw@gmail.com"

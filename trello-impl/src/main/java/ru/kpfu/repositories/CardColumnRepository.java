@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface CardColumnRepository extends JpaRepository<CardColumn, Long> {
 
-    @Query(value = "FROM CardColumn c LEFT JOIN FETCH c.cards card WHERE c.board.id = :boardId AND c.isDeleted = FALSE ORDER BY c.orderId")
+    @Query(value = "FROM CardColumn c LEFT JOIN FETCH c.cards card WHERE c.board.id = :boardId AND c.isDeleted = FALSE AND card.status != 'ARCHIVE' ORDER BY c.orderId")
     List<CardColumn> getAllCardColumnByBoard_IdOrderByOrderId(Long boardId);
 
     @Query(value = "UPDATE CardColumn c SET c.orderId = :orderId WHERE c.id = :columnId")

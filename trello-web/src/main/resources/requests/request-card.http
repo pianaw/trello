@@ -1,4 +1,4 @@
-POST http://localhost:8080/rest/board/1/card
+POST http://localhost:8080/api/board/1/col//card
 Content-Type: application/json
 X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxOTkzNzgsImV4cCI6MTYxOTI4NTc3OH0.IzybTQg9XJiLb3RFrGbODJTYSHQg3tE9QReCKxY-M6fx6KpLI1-0ljYXjGvxNC76o6t6UqA98kck7gx5JJ694w
 
@@ -10,7 +10,7 @@ X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQi
 
 ###
 
-PUT http://localhost:8080/rest/board/2/card/1
+PUT http://localhost:8080/api/board/2/col/77/card/1
 Content-Type: application/json
 X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTg5OTMyNTksImV4cCI6MTYxOTA3OTY1OX0.Xra1-Ric0Qo4AKLGT8VGUk9Up4w-wIn2_yfN2H5wAbF7wA1KhIIdxrmhX922edZWRwQ-5O4oGNbTetN6Cf3VwA
 
@@ -20,5 +20,5 @@ X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQi
 
 ###
 
-GET http://localhost:8080/rest/board/2/card
-X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxOTkzNzgsImV4cCI6MTYxOTI4NTc3OH0.IzybTQg9XJiLb3RFrGbODJTYSHQg3tE9QReCKxY-M6fx6KpLI1-0ljYXjGvxNC76o6t6UqA98kck7gx5JJ694w
+GET http://localhost:8080/api/board/
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MjA3NTgxOTAsImV4cCI6MTYyMDg0NDU5MH0.pEc8bESJxiuwE4zkps2MZm9MGI1hamjPL1-dSEAZVEQUc-d4efgozd8xEgfH5V3evhr15CocRHBSnHiGpr2aBQ
