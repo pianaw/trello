@@ -1,0 +1,24 @@
+POST http://localhost:8080/rest/board/1/card
+Content-Type: application/json
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxOTkzNzgsImV4cCI6MTYxOTI4NTc3OH0.IzybTQg9XJiLb3RFrGbODJTYSHQg3tE9QReCKxY-M6fx6KpLI1-0ljYXjGvxNC76o6t6UqA98kck7gx5JJ694w
+
+{
+  "title": "My first card",
+  "description":"It's my first card for the first board",
+  "deadline": "2021-04-20"
+}
+
+###
+
+PUT http://localhost:8080/rest/board/2/card/1
+Content-Type: application/json
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTg5OTMyNTksImV4cCI6MTYxOTA3OTY1OX0.Xra1-Ric0Qo4AKLGT8VGUk9Up4w-wIn2_yfN2H5wAbF7wA1KhIIdxrmhX922edZWRwQ-5O4oGNbTetN6Cf3VwA
+
+{
+  "email": "piauaw@gmail.com"
+}
+
+###
+
+GET http://localhost:8080/rest/board/2/card
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxOTkzNzgsImV4cCI6MTYxOTI4NTc3OH0.IzybTQg9XJiLb3RFrGbODJTYSHQg3tE9QReCKxY-M6fx6KpLI1-0ljYXjGvxNC76o6t6UqA98kck7gx5JJ694w

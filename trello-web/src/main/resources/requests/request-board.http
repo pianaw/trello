@@ -1,0 +1,24 @@
+###
+
+POST http://localhost:8080/rest/board
+Content-Type: application/json
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTg5OTMyNTksImV4cCI6MTYxOTA3OTY1OX0.Xra1-Ric0Qo4AKLGT8VGUk9Up4w-wIn2_yfN2H5wAbF7wA1KhIIdxrmhX922edZWRwQ-5O4oGNbTetN6Cf3VwA
+
+{
+  "title": "My first project"
+}
+
+###
+
+GET http://localhost:8080/rest/board
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTk0MzcxMzIsImV4cCI6MTYxOTUyMzUzMn0.MlCNl5mDCwqpGyh1FuHEWVBO2_4_aOd21m3JKZVEzpPASjuFmyS-aN0oaL-EhSsiPOK5cDNoJ191p7VkX-k-sQ
+
+###
+
+PUT http://localhost:8080/rest/board/1
+Content-Type: application/json
+X-TOKEN:Bearer
+
+{
+  "email": "piauaw@gmail.com"
+}

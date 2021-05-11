@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "bezkoder.app.jwtSecret",
+      "type": "java.lang.String",
+      "description": "Description for bezkoder.app.jwtSecret."
+  }
+] }

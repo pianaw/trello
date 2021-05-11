@@ -1,0 +1,25 @@
+###
+
+POST http://localhost:8080/rest/user/login
+Content-Type: application/json
+
+{
+  "email": "dianam0@rambler.ru",
+  "password" : "t4f48aoq_Q"
+}
+
+###
+
+POST http://localhost:8080/rest/user/registration
+Content-Type: application/json
+
+{
+  "name" : "Diana",
+  "email": "dianam0@rambler.ru",
+  "password" : "t4f48aoq_Q"
+}
+
+###
+
+GET http://localhost:8080/rest/user/profile
+X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTg5ODUxODEsImV4cCI6MTYxOTA3MTU4MX0.ztiYa6ZqVpQ4RZ7r9YIg0RdJ_T7Zt43t7p_YJWkzgn1C0fm9zhRz_OEAqmsg73htdIde9AAYGoe3M9YVzprP8g

@@ -1,0 +1,74 @@
+.modal {
+    display: none; /* Hidden by default */
+    z-index: 10;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+    border-radius: 10px;
+    width: 450px;
+    top: 10%;
+    position: absolute;
+}
+
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: initial;
+    pointer-events: auto;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before{
+    border-right: 2px solid #1e90ff;
+    border-bottom: 2px solid dodgerblue;
+}
+
+.small-button:hover, .small-button:focus {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.trello-card {
+    width: 270px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.trello-card-element {
+    width: 230px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/* Modal Content */
+.modal-content {
+    background-color: lightyellow;
+    overflow: auto; /* Enable scroll if needed */
+    margin: auto;
+    text-align: left !important;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+}
+
+/* The Close Button */
+.close, .delete {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.delete:hover,
+.delete:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

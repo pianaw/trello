@@ -1,0 +1,9 @@
+POST http://localhost:8080/rest/board/2/card/1/comment
+Content-Type: application/json
+X-TOKEN: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxODE3NjAsImV4cCI6MTYxOTI2ODE2MH0.rbHoqOgoLg8KFPUtPbNSJqM6yEJgUTVkC0VFfncTscMy_4Nga24iy5lXefwoXFYtuILIo-IJo60I8HS1ng5jWQ
+
+{
+  "text": "Easy",
+  "authorEmail": "dianam0@ramble.ru",
+  "creationDate": "2021-04-20"
+}

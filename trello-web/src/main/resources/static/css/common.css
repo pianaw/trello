@@ -1,0 +1,42 @@
+A:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+.trello-button, .trello-button:focus {
+    background-color: dodgerblue; !important;
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    text-align: center;
+}
+input:focus {
+    color: black !important;
+}
+input:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important
+}
+.my_card {
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 6px;
+    font-size: 22px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-family: "Sitka Display",fantasy;
+}
+.my_card:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+h6 {
+    font-size: 20px;
+}
+select {
+    display: block;
+    width: 70%;
+    height: 2rem;
+    padding: 3px;
+}
