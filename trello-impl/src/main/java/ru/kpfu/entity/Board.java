@@ -32,5 +32,4 @@ public class Board {
 
     @OneToMany(mappedBy = "board")
     private Set<CardColumn> columns;
-
 }

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import ru.kpfu.trelloapi.validation.annotations.Password;
 import ru.kpfu.trelloapi.validation.annotations.UserName;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

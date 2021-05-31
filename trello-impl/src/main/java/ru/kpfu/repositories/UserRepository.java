@@ -20,4 +20,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query(value = "FROM User u JOIN FETCH u.cards cards WHERE cards.id = :id")
     List<User> findCardParticipantsByCard_Id(Long id);
+
+    Optional<User> findByRedisId(String redisId);
 }

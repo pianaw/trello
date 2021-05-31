@@ -32,6 +32,8 @@ public class User implements Serializable {
     @Enumerated(value = EnumType.STRING)
     public Role role;
 
+    public String redisId;
+
     public enum Role {
         ADMIN,
         USER
@@ -56,4 +58,6 @@ public class User implements Serializable {
         GOOGLE,
         TRELLO
     }
+
+
 }

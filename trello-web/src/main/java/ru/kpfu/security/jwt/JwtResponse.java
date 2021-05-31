@@ -1,15 +1,20 @@
 package ru.kpfu.security.jwt;
 
 import lombok.AllArgsConstructor;
-import ru.kpfu.security.details.UserDetailsImpl;
-
-import java.util.List;
+import lombok.Data;
+import lombok.Builder;
+import org.springframework.beans.factory.annotation.Value;
 
 @AllArgsConstructor
+@Data
+@Builder
 public class JwtResponse {
 
-    private String jwt;
-    private UserDetailsImpl userDetails;
-    private String email;
-    List<String> roles;
+
+    private String accessToken;
+
+    private String refreshToken;
+
+    @Value("${app.jwtExpirationMs}")
+    private String accessExpiresIn;
 }

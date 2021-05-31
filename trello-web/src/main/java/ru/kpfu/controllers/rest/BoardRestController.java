@@ -6,6 +6,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import ru.kpfu.security.details.UserDetailsImpl;
+import ru.kpfu.security.jwt.JwtAuthentication;
 import ru.kpfu.trelloapi.dto.BoardDto;
 import ru.kpfu.trelloapi.dto.UserEmailDto;
 import ru.kpfu.trelloapi.services.BoardService;

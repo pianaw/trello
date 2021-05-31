@@ -1,7 +1,9 @@
 package ru.kpfu.config;
 
+import com.auth0.jwt.algorithms.Algorithm;
 import org.apache.coyote.http11.AbstractHttp11Protocol;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;
 import org.springframework.context.MessageSource;
@@ -22,6 +24,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableJpaAuditing
 public class TrelloImplConfiguration implements WebMvcConfigurer {
 
+    @Value("app.jwtSecret")
+    private String secret;
+
     @Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();
@@ -39,5 +44,10 @@ public class TrelloImplConfiguration implements WebMvcConfigurer {
     TomcatConnectorCustomizer headerRejectionCustomizer() {
         return (connector) ->
                 ((AbstractHttp11Protocol<?>)connector.getProtocolHandler()).setRejectIllegalHeader(false);
+    }
+
+    @Bean
+    public Algorithm algorithm() {
+        return Algorithm.HMAC256(secret);
     }
 }

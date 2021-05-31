@@ -1,6 +1,6 @@
 POST http://localhost:8080/api/board/1/col//card
 Content-Type: application/json
-X-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxOTkzNzgsImV4cCI6MTYxOTI4NTc3OH0.IzybTQg9XJiLb3RFrGbODJTYSHQg3tE9QReCKxY-M6fx6KpLI1-0ljYXjGvxNC76o6t6UqA98kck7gx5JJ694w
+X-ACCESS-TOKEN:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkaWFuYW0wQHJhbWJsZXIucnUiLCJpYXQiOjE2MTkxOTkzNzgsImV4cCI6MTYxOTI4NTc3OH0.IzybTQg9XJiLb3RFrGbODJTYSHQg3tE9QReCKxY-M6fx6KpLI1-0ljYXjGvxNC76o6t6UqA98kck7gx5JJ694w
 
 {
   "title": "My first card",
